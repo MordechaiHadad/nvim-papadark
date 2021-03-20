@@ -2,6 +2,7 @@
 set background=dark
 let g:colors_name="nvim-papadark"
 
+
 " By setting our module to nil, we clear lua's cache,
 " which means the require ahead will *always* occur.
 "
@@ -15,4 +16,3 @@ lua package.loaded['lush_theme.nvim-papadark'] = nil
 
 " include our theme file and pass it to lush to apply
 lua require('lush')(require('lush_theme.nvim-papadark'))
-
