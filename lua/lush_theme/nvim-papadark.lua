@@ -166,7 +166,7 @@ local theme = lush(function()
     -- Keyword        { }, --  any other keyword
     -- Exception      { }, --  try, catch, throw
 
-    PreProc        {fg = purple }, -- (preferred) generic Preprocessor
+    PreProc        {fg = blue }, -- (preferred) generic Preprocessor
     -- Include        { }, --  preprocessor #include
     -- Define         { }, --   preprocessor #define
     -- Macro          { }, --    same as Define
@@ -256,7 +256,7 @@ local theme = lush(function()
     -- TSKeywordFunction    { };    -- For keywords used to define a fuction.
     -- TSLabel              { };    -- For labels: `label:` in C and `:label:` in Lua.
     -- TSMethod             { };    -- For method calls and definitions.
-    -- TSNamespace          { };    -- For identifiers referring to modules and namespaces.
+    TSNamespace          {fg = blue_green};    -- For identifiers referring to modules and namespaces.
     -- TSNone               { };    -- TODO: docs
     -- TSNumber             { };    -- For all numbers
     -- TSOperator           { };    -- For any operator: `+`, but also `->` and `*` in C.
@@ -287,10 +287,14 @@ local theme = lush(function()
     -- TSURI                { };    -- Any URI like a link or email.
 
     -- Nvim Tree
-    
+
     NvimTreeRootFolder   {fg = light_blue};
     NvimTreeFileDeleted  {fg = red};
 
+    -- GitSigns
+    GitSignsAdd          {fg = green, bg = background};
+    GitSignsChange       {fg = yellow, bg = background};
+    GitSignsDelete       {fg = red, bg = background};
   }
 end)
 
