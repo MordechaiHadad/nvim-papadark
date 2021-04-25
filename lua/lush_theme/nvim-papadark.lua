@@ -203,8 +203,8 @@ local theme = lush(function()
     -- LspReferenceRead                     { }, -- used for highlighting "read" references
     -- LspReferenceWrite                    { }, -- used for highlighting "write" references
 
-    -- LspDiagnosticsDefaultError           { }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    -- LspDiagnosticsDefaultWarning         { }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    LspDiagnosticsDefaultError           {fg = red }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    LspDiagnosticsDefaultWarning         {fg = yellow }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
     -- LspDiagnosticsDefaultInformation     { }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
     -- LspDiagnosticsDefaultHint            { }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
 
@@ -218,8 +218,8 @@ local theme = lush(function()
     -- LspDiagnosticsUnderlineInformation   { }, -- Used to underline "Information" diagnostics
     -- LspDiagnosticsUnderlineHint          { }, -- Used to underline "Hint" diagnostics
 
-    -- LspDiagnosticsFloatingError          { }, -- Used to color "Error" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingWarning        { }, -- Used to color "Warning" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingError          {fg = red}, -- Used to color "Error" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingWarning        {fg = yellow }, -- Used to color "Warning" diagnostic messages in diagnostics float
     -- LspDiagnosticsFloatingInformation    { }, -- Used to color "Information" diagnostic messages in diagnostics float
     -- LspDiagnosticsFloatingHint           { }, -- Used to color "Hint" diagnostic messages in diagnostics float
 
@@ -287,7 +287,6 @@ local theme = lush(function()
     -- TSURI                { };    -- Any URI like a link or email.
 
     -- Nvim Tree
-
     NvimTreeRootFolder   {fg = light_blue};
     NvimTreeFileDeleted  {fg = red};
 
@@ -295,6 +294,10 @@ local theme = lush(function()
     GitSignsAdd          {fg = green, bg = background};
     GitSignsChange       {fg = yellow, bg = background};
     GitSignsDelete       {fg = red, bg = background};
+
+    -- Lsp trouble
+    LspTroubleSignError  {fg = red};
+    LspTroubleSignWarning{fg = yellow};
   }
 end)
 
