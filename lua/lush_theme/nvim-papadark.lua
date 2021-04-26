@@ -298,6 +298,10 @@ local theme = lush(function()
     -- Lsp trouble
     LspTroubleSignError  {fg = red};
     LspTroubleSignWarning{fg = yellow};
+    LspTroubleText        {fg = foreground};
+
+	-- Lspsaga
+	LspSagaLightBulbSign {fg = yellow};
   }
 end)
 
