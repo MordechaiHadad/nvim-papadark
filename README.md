@@ -1,7 +1,45 @@
-(WIP)A Lush Theme inspired by Nord and Onedark for Neovim with SUPER emphasis on blueness.
+Papadark
 ===
-See(Must be installed): http://git.io/lush.nvim for more information on Lush and a helper script
-to setup your repo clone.
-![Alt text](./resources/cpp.png)
+A [nord](https://www.nordtheme.com/) and dark+ inspired colorscheme using [lush.nvim](https://github.com/rktjmp/lush.nvim)
+![Colors Showcase](./assets/code.png)
 
-## Please keep in mind some of the colors will look different on your config due to the fact that I made my own custom queries for treesitter
+### Supports
+- Treesitter
+- LSP
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim/)
+- [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)(WIP)
+- [gitsigns](https://github.com/lewis6991/gitsigns.nvim)(WIP)
+- [lsp-trouble](https://github.com/folke/lsp-trouble.nvim)(WIP)
+- [Lspsaga](https://github.com/glepnir/lspsaga.nvim)(WIP)
+
+### Requirements
+- Neovim 0.5 or greater(I might make vim compatible once I get to it)
+- [lush.nvim](https://github.com/rktjmp/lush.nvim) installed
+
+### Installation
+With `packer.nvim`
+```lua
+use {'MordechaiHadad/nvim-papadark', requires = {'rktjmp/lush.nvim'}}
+```
+
+With `Vim-Plug`
+```vim
+Plug 'rktjmp/lush.nvim'
+Plug 'MordechaiHadad/nvim-papadark'
+```
+
+### Configure
+In your `init.lua` file
+
+```lua
+vim.cmd('syntax on')
+vim.cmd(set termguicolors)
+vim.cmd('colorscheme papadark')
+```
+
+or in `init.vim`
+```vim
+syntax on
+set termguicolors
+colorscheme papadark
+```
