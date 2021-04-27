@@ -1,16 +1,17 @@
 Papadark
 ===
-A [nord](https://www.nordtheme.com/) and dark+ inspired colorscheme using [lush.nvim](https://github.com/rktjmp/lush.nvim)
+A [nord](https://www.nordtheme.com/) and dark+ inspired colorscheme using [lush.nvim](https://github.com/rktjmp/lush.nvim)(still wip)
+
 ![Colors Showcase](./assets/code.png)
 
 ### Supports
 - Treesitter
 - LSP
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim/)
-- [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)(WIP)
-- [gitsigns](https://github.com/lewis6991/gitsigns.nvim)(WIP)
-- [lsp-trouble](https://github.com/folke/lsp-trouble.nvim)(WIP)
-- [Lspsaga](https://github.com/glepnir/lspsaga.nvim)(WIP)
+- [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
+- [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [lsp-trouble](https://github.com/folke/lsp-trouble.nvim)
+- [Lspsaga](https://github.com/glepnir/lspsaga.nvim)
 
 ### Requirements
 - Neovim 0.5 or greater(I might make vim compatible once I get to it)
@@ -33,7 +34,7 @@ In your `init.lua` file
 
 ```lua
 vim.cmd('syntax on')
-vim.cmd(set termguicolors)
+vim.cmd('set termguicolors')
 vim.cmd('colorscheme papadark')
 ```
 
