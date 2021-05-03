@@ -289,6 +289,8 @@ local theme = lush(function()
     -- Nvim Tree
     NvimTreeRootFolder   {fg = light_blue};
     NvimTreeFileDeleted  {fg = red};
+	NvimTreeGitDeleted	 {fg = red};
+	NvimTreeGitDirty     {fg = yellow};
 
     -- GitSigns
     GitSignsAdd          {fg = green, bg = background};
