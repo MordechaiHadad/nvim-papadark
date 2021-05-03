@@ -120,7 +120,7 @@ local theme = lush(function()
     -- NormalNC     { }, -- normal text in non-current windows
     Pmenu        {bg = line_color }, -- Popup menu: normal item.
     PmenuSel     {fg = black, bg = blue }, -- Popup menu: selected item.
-    PmenuSbar    {fg = grey }, -- Popup menu: scrollbar.
+    PmenuSbar    {bg = visual_grey }, -- Popup menu: scrollbar.
     PmenuThumb   {fg = foreground }, -- Popup menu: Thumb of the scrollbar.
     Question     {fg = purple }, -- |hit-enter| prompt and yes/no questions
     QuickFixLine {fg = foreground, bg = quickfix_line }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
@@ -304,6 +304,10 @@ local theme = lush(function()
 
 	-- Lspsaga
 	LspSagaLightBulbSign {fg = yellow};
+
+	-- Indent Blankline
+	IndentBlanklineChar {fg = grey};
+
   }
 end)
 
