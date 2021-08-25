@@ -309,6 +309,15 @@ local theme = lush(function()
                 -- Indent Blankline
                 IndentBlanklineChar {fg = grey};
 
+                -- Neogit
+                NeogitBranch                { fg = blue };
+                NeogitRemote                { fg = light_blue };
+                NeogitHunkHeader            { fg = light_blue };
+                NeogitHunkHeaderHighlight   { fg = light_blue, bg = line_color };
+                NeogitDiffContextHighlight  { bg = line_color };
+                NeogitDiffDeleteHighlight   { fg = red, bg = line_color };
+                NeogitDiffAddHighlight      { fg = green, bg = line_color };
+
             }
         end)
 
