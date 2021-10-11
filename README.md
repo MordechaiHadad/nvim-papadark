@@ -11,8 +11,6 @@ A [nord](https://www.nordtheme.com/) and dark+ inspired colorscheme using [lush.
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [lsp-trouble](https://github.com/folke/lsp-trouble.nvim)
-- [Lspsaga](https://github.com/glepnir/lspsaga.nvim)
-- [Indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim/tree/lua)
 
 ### Requirements
 - Neovim 0.5 or greater(I might make vim compatible once I get to it)
