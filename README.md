@@ -1,5 +1,6 @@
 Papadark
 ===
+# Moving To [themer.lua](https://github.com/NarutoXY/themer.lua)
 A [nord](https://www.nordtheme.com/) and dark+ inspired colorscheme using [lush.nvim](https://github.com/rktjmp/lush.nvim)(still wip)
 
 ![Colors Showcase](./assets/code.png)
